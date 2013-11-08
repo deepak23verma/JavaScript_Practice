@@ -28,4 +28,13 @@ for (var counter = 0; counter < 10; counter += 1) {
   line = line + "#";
   console.log(line);
 };
+
+// Ex 2.5 prompt user to answer what is 2 + 2
+var answer = Number(prompt("What is 2 + 2 = "));
+if (answer == 4)
+  alert("You are a math GOD!");
+else if (answer == 3 || answer == 5)
+  alert("So close!!!");
+else
+  alert("Did you sleep through math??");
   
