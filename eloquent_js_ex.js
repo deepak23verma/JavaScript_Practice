@@ -22,7 +22,7 @@ for (var counter = 0; counter < 10; counter += 1)
   total = total * 2;
 console.log(total);
 
-// Ex 2.5 rewrite 2.3 using a for loop
+// Ex 2.4 rewrite 2.3 using a for loop
 var line = "";
 for (var counter = 0; counter < 10; counter += 1) {
   line = line + "#";
@@ -37,4 +37,18 @@ else if (answer == 3 || answer == 5)
   alert("So close!!!");
 else
   alert("Did you sleep through math??");
+
+// Ex 2.6 repeat 2 + 2 until user gives the right answer
+var answer;
+while (true) {
+  answer = Number(prompt("what is 2 + 2 = "));
+  if (answer == 4) {
+    alert("You are a genius");
+    break;
+  }
+  else if (answer == 3 || answer == 5)
+    alert("You are so close!")
+  else
+    alert("Why do I even know you?");
+}
   
